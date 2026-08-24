@@ -1,0 +1,9 @@
+{
+  "name": "creatorforge-ai",
+  "private": true,
+  "workspaces": ["frontend", "backend"],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=frontend\" \"npm run dev --workspace=backend\"",
+    "build": "npm run build --workspaces"
+  }
+}
